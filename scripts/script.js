@@ -131,7 +131,10 @@ function launch() {
 	document.getElementById("stop").disabled = false;
 	document.getElementById("reset").disabled = true;
 	
-	for(iterate = 1 ; iterate <= 100 ; iterate++) {
+	var nbIterat = document.getElementById("nbIterat").value;
+	nbIterat++;
+
+	for(iterate = 1 ; iterate < nbIterat ; iterate++) {
 		isWhite = !grid[position[0]][position[1]];
 		if(isOnBorder(isWhite, lookTo)){
 			document.getElementById("stop").disabled = true;
