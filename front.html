@@ -8,15 +8,21 @@
 	
 	<title>Langton's Ant</title>
 <body onload="reset()">
-	<h2>Langton's Ant Turing machine</h2>
-	<canvas id="canvas" width="400" height="400"></canvas>
-	<button id="launch" onclick="launch()">Unleash the ant</button>
-	<label for="nbIterat" >Number of Iterations</label>
-	<input type="number" id="nbIterat" name="nbIterat" value="100"></input>
-	<div id="iterations">Iterations : <strong id="nbiterations">0</strong></div>
-	<div id="stopbuttons">
-		<button id="stop" onclick="stop()">Stop</button>
-		<button id="reset" onclick="reset()">Reset</button>
+	<div class='col-middle'>
+		<h2>Langton's Ant Turing machine</h2>
+		<canvas id="canvas" width="400" height="400"></canvas>
+	</div>
+	<div class='col-2 col-2-left'>
+		<button id="launch" onclick="launch()">Unleash the ant</button>
+		<div id="stopbuttons">
+			<button id="stop" onclick="stop()">Stop</button>
+			<button id="reset" onclick="reset()">Reset</button>
+		</div>
+	</div>
+	<div class="col-2 col-2-right">
+		<label for="nbIterat" >Number of Iterations</label>
+		<input type="number" id="nbIterat" name="nbIterat" value="100"></input>
+		<div id="iterations">Iterations : <strong id="nbiterations">0</strong></div>
 	</div>
 </body>
 

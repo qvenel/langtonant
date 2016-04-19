@@ -1,20 +1,43 @@
+*{
+	box-sizing: border-box;
+}
 body{
-	margin-left: 100px;
+	margin: 0 auto;
+	width: 990px;
 }
 
-h2 {
-	margin-left : 60px;
+.col-middle{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.col-2{
+	float: left;
+	width: 50%;
+}
+
+.col-2-left{
+	text-align: right;
+	padding-right: 20px;
+	border-right: 1px solid grey;
+}
+.col-2-right{
+	padding-left: 20px;
+}
+
+label{
+	display: block;
+	font-size: 12px;
 }
 
 #canvas {
 	display: block;
-	margin-left : 20px;
+	margin : 20px auto;
 	border : 1px solid black;
 }
 
 #launch {
 	display : inline;
-	margin : 20px 0px 0px 20px;
 }
 
 #stopbuttons {
@@ -35,9 +58,4 @@ img {
 	height:300px;
 	border:1px solid black;
 	margin-left: 500px;
-}
-
-div#iterations {
-	display:inline;
-	margin-left: 200px;
 }
