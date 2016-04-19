@@ -1,0 +1,43 @@
+body{
+	margin-left: 100px;
+}
+
+h2 {
+	margin-left : 60px;
+}
+
+#canvas {
+	display: block;
+	margin-left : 20px;
+	border : 1px solid black;
+}
+
+#launch {
+	display : inline;
+	margin : 20px 0px 0px 20px;
+}
+
+#stopbuttons {
+	display : block;
+	margin : 5px 0px 0px 20px;
+}
+
+#stop {
+	width: 51px;
+}
+
+#reset {
+	margin-left : 2px;
+}
+
+img {
+	width:300px;
+	height:300px;
+	border:1px solid black;
+	margin-left: 500px;
+}
+
+div#iterations {
+	display:inline;
+	margin-left: 200px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ 
+	<link rel="icon" type="image/png" href="./img/ant_favicon.png" />
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+	
+	<title>Langton's Ant</title>
+<body onload="reset()">
+	<h2>Langton's Ant Turing machine</h2>
+	<canvas id="canvas" width="400" height="400"></canvas>
+	<button id="launch" onclick="launch()">Unleash the ant</button>
+	<div id="iterations">Iterations : <strong id="nbiterations">0</strong></div>
+	<div id="stopbuttons">
+		<button id="stop" onclick="stop()">Stop</button>
+		<button id="reset" onclick="reset()">Reset</button>
+	</div>
+</body>
+
+<script type="text/javascript" src="./scripts/script.js"></script>
+</html>
