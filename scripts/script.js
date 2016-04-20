@@ -1,4 +1,4 @@
-var size = 15;
+var size = 100;
 var grid = new Array(size, size);
 for (i = 0 ; i < size ; i++)
 	grid[i] = new Array(size);
@@ -49,7 +49,7 @@ function draw() {
 		for (j = 0 ; j < size ; j++){
 			y = j * cellSize;
 			
-			drawCell(context, cellSize, x, y);
+			//drawCell(context, cellSize, x, y);
 			fillCell(context, cellSize, x, y);
 			drawAnt(context, cellSize, i, j, x, y);
 		}
@@ -173,11 +173,11 @@ function launch() {
 			
 			lookTo = (lookTo + 3) % 4;
 		}
-		draw();
 		
 		document.getElementById("nbiterations").innerHTML = iterate;
 		
 	}
+		draw();
 }
 
 /**
